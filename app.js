@@ -22,10 +22,6 @@ app.use('/api', userRoutes)
 app.use('/api', flowRoutes)
 
 
-app.get('/',(req,res) => {
-    res.send("test");
-})
-
 const port = process.env.PORT || 8001
 
 app.listen(port, () => {
